@@ -46,7 +46,7 @@ You need to add **{MAVEN_HOME_FOLDER}/bin** into you **Path** environment variab
 
 **How to run**
 -----
-To avoid the complexity of Application Server configuration, this project has dependencies on some **JBoss6** built-in features, like JMS MOM hornetq, and built-in database hsqldb, hibernate, etc
+To avoid the complexity of Application Server configuration, this project has dependencies on some **JBoss6** built-in features, like JMS MOM hornetq, and built-in database hsqldb, hibernate, etc.
 so you will need to download a fresh **JBoss AS 6.1.0.Final** from http://jbossas.jboss.org/downloads/.
 Once you have JBoss installed, copy **UnicoTest-ear.ear** into ***{jboss-6.1.0.Final_home}\server\default\deploy***, the run JBoss.
 
