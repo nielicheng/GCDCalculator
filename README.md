@@ -12,7 +12,7 @@ This is a maven project, it has three modules.
 
 - **QueueMngerBean**: Session bean, encapsulates JMS queue related operations that send to and receive numbers from queue.
 - **NumberMngerBean**: Session bean, encapsulates persistence related operatios which store and retrieve numbers from database.
-- **GCDBean**: Session bean, expose SOAP web serivce. It calls QueueMngerBean to retrieve numbers and calcualte gcd of these numbers, and return result to web serivce client. 
+- **GCDBean**: Session bean, expose SOAP web serivce. It calls QueueMngerBean to retrieve numbers, then calcualte gcd of these numbers, and return result to web serivce client. 
              
 **GCDCalculator-web**
 : Web module, contains JAX-RS RESTful web serivce implementation.
