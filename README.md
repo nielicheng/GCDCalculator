@@ -34,10 +34,12 @@ to point to your Maven installation, then run build.bat.
 
 - If you use **Linux** or other OS
 
-You need to add **%M2_HOME%\bin** into you **Path** environment variable, then from command line, go the the project folder, run following commands in sequence.
+You need to add **%M2_HOME%\bin** into you **Path** environment variable, then from command line, go to the the project folder, run following commands in sequence.
   
   > mvn -f GCDCalculator-ejb/pom.xml install
+  
   > mvn -f GCDCalculator-web/pom.xml install
+  
   > mvn package
 
 **UnicoTest-ear.ear** will be generated under **UnicoTest-ear\target**.
