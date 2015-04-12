@@ -56,19 +56,19 @@ Once you have JBoss installed, copy **UnicoTest-ear.ear** into ***{jboss-6.1.0.F
 
 1. Test **public String push(int i1, int i2)**;
 
-The push RESTFul service's URL is [http://localhost:8080/GCDCalculator-web/rest/gcdService/create]
+The push RESTFul service's URL is [http://localhost:8080/GCDCalculator-web/rest/gcdService/create](http://localhost:8080/GCDCalculator-web/rest/gcdService/create)
 It accepts HTTP Post and consumes application/x-www-form-urlencoded MIME type.
 A JSP has been provided to facilitate this testing.
-You can load the JSP by URL: [http://localhost:8080/GCDCalculator-web/restServiceTest.jsp]
+You can load the JSP by URL: [http://localhost:8080/GCDCalculator-web/restServiceTest.jsp](http://localhost:8080/GCDCalculator-web/restServiceTest.jsp)
 
 2. Test **public List<Integer> list()**;
 
-This RESTFul service's URL is [http://localhost:8080/GCDCalculator-web/rest/gcdService/list]
+This RESTFul service's URL is [http://localhost:8080/GCDCalculator-web/rest/gcdService/list](http://localhost:8080/GCDCalculator-web/rest/gcdService/list)
 
 This is very easy to test as you just need to do a HTTP GET request in web browser.
 
 3. Test **SOAP web serivice**.
 
-The WSDL URL is [http://localhost:8080/GCDWS/GCDService/GCDBean?wsdl]
+The WSDL URL is [http://localhost:8080/GCDWS/GCDService/GCDBean?wsdl](http://localhost:8080/GCDWS/GCDService/GCDBean?wsdl)
 
 You can use SoapUI or other tool to test it.
