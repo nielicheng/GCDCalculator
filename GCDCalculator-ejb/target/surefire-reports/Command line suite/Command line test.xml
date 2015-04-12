@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite hostname="lap245" name="com.nie.test.util.GCDCalcatorTest" tests="4" failures="0" timestamp="12 Apr 2015 11:00:07 GMT" time="0.017" errors="0">
-  <testcase name="testGCD" time="0.0060" classname="com.nie.test.util.GCDCalcatorTest"/>
-  <testcase name="testGCD" time="0.0010" classname="com.nie.test.util.GCDCalcatorTest"/>
-  <testcase name="testGCD" time="0.0" classname="com.nie.test.util.GCDCalcatorTest"/>
-  <testcase name="testGCD" time="0.0010" classname="com.nie.test.util.GCDCalcatorTest"/>
-</testsuite>
