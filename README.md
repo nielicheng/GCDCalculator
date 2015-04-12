@@ -24,12 +24,20 @@ This is a maven project, it has three modules.
 Check out the project.
 As this is a Maven project, you need to have **Maven2** installed in your computer.
 
+- Make sure you have **JDK1.6** or above installed, and environment variable **JAVA_HOME** pointing to the JDK folder.
 - If you use **Windows** OS
-you can edit build.bat file, change this line set M2_HOME=C:\programs\apache-maven-2.0.9 point to you Maven installation, then run build.bat.
+Please find **build.bat** file in the project, change this line 
+
+> set M2_HOME=C:\programs\apache-maven-2.0.9  
+
+to point to your Maven installation, then run build.bat.
 
 - If you use **Linux** or other OS
-You need to add **%M2_HOME%\bin** into you environment variable, then from command line, go the the project folder, run 
-> mvn package
+You need to add **%M2_HOME%\bin** into you **Path** environment variable, then from command line, go the the project folder, run following commands in sequence.
+  
+  > mvn -f GCDCalculator-ejb/pom.xml install
+  > mvn -f GCDCalculator-web/pom.xml install
+  > mvn package
 
 **UnicoTest-ear.ear** will be generated under **UnicoTest-ear\target**.
 
@@ -44,14 +52,14 @@ Once you have JBoss installed, copy **UnicoTest-ear.ear** into ***{jboss-6.1.0.F
 > **Note:** You may need to change the port number in following URLs.
 
 1. Test **public String push(int i1, int i2)**;
-The push RESTFul service URL is http://localhost:8080/GCDCalculator-web/rest/gcdService/create
+The push RESTFul service's URL is http://localhost:8080/GCDCalculator-web/rest/gcdService/create
 It accepts HTTP Post and consumes application/x-www-form-urlencoded MIME type.
 A JSP has been provided to facilitate this testing.
-Test JSP URL: http://localhost:8080/GCDCalculator-web/restServiceTest.jsp
+You can load the JSP by URL: http://localhost:8080/GCDCalculator-web/restServiceTest.jsp
 
 2. Test **public List<Integer> list()**;
-This RESTFul service URL is http://localhost:8080/GCDCalculator-web/rest/gcdService/list
-This is very easy as you just need to do a HTTP GET request in web browser.
+This RESTFul service's URL is http://localhost:8080/GCDCalculator-web/rest/gcdService/list
+This is very easy to test as you just need to do a HTTP GET request in web browser.
 
 3. Test **SOAP web serivice**.
 The WSDL URL is http://localhost:8080/GCDWS/GCDService/GCDBean?wsdl
