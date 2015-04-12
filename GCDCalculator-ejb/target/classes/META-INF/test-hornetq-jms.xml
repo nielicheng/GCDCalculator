@@ -1,0 +1,10 @@
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="urn:hornetq"
+    xsi:schemaLocation="urn:hornetq /schema/hornetq-jms.xsd" >
+ 
+    <queue name="gcdQueue" >
+        <entry name="/queue/gcdQueue" />
+        <durable>true</durable>
+    </queue>
+ 
+</configuration>
