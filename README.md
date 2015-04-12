@@ -34,7 +34,7 @@ to point to your Maven installation, then run build.bat.
 
 - If you use **Linux** or other OS
 
-You need to add **{MAVEN_HOME_FOLDER}%/bin** into you **Path** environment variable, then from command line, go to the the project folder, run following commands in sequence.
+You need to add **{MAVEN_HOME_FOLDER}/bin** into you **Path** environment variable, then from command line, go to the the project folder, run following commands in sequence.
   
   > mvn -f GCDCalculator-ejb/pom.xml install
   
